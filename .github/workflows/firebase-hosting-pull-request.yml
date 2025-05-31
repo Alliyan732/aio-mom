@@ -16,5 +16,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MOMMY_256D5 }}
-          projectId: mommy-256d5
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_AIO_MOM }}
+          projectId: aio-mom
