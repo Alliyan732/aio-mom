@@ -110,7 +110,7 @@
         if (/android/i.test(userAgent)) {
           if (apkUrl) {
             // Trigger automatic download
-            window.location.href = apkUrl;        
+            window.location.href = apkUrl;
           }
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
           // Redirect iOS users to the App Store
