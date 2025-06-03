@@ -111,20 +111,21 @@
           if (apkUrl) {
             // Trigger automatic download
             window.location.href = apkUrl;
-            setTimeout(() => window.close(), 1000);
           }
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
           // Redirect iOS users to the App Store
           if (iosUrl) {
             window.location.href = iosUrl;
-            setTimeout(() => window.close(), 1000);
-          }
-        } else {
-          // Update the download button for other platforms
-          if (apkUrl) {
-            document.getElementById("downloadButton").href = apkUrl;
           }
         }
+        
+        // else {
+        //   // Update the download button for other platforms
+        //   if (apkUrl) {
+        //     document.getElementById("downloadButton").href = apkUrl;
+        //   }
+        // }
+
       });
     </script>
   </body>
